@@ -51,6 +51,11 @@ For the following code, if you see Out-of-vram, try add `critic.model.enable_gra
 
 
 Works for model <= 1.5B. For Qwen2.5-0.5B base, we know it fails to learn reasoning.
+* NOTE: this Repo uses wandb to log, so you will need to setup a account and setup an account on wandab.ai and export your api key, e.g.: 
+```
+export WANDB_API_KEY=66cf7f3dfgcaaeb7312debb5c32abca85cd2342
+```
+* then run the following lines: 
 
 ```
 export N_GPUS=1
